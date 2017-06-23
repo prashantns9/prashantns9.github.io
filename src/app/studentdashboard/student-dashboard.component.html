@@ -1,0 +1,97 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<div class="row">
+	<div class="col s3">
+
+		
+	
+		<ul id="slide-out" class="side-nav fixed z-depth-4">
+			<li>
+				
+					<div class="card-panel teal white-text z-depth-1">
+						<div class="row valign-wrapper">
+							<i class="medium material-icons">perm_identity</i>
+						</div>
+	
+						<div>
+							<i>Logged In : Username</i>
+
+							
+						</div>
+					</div>
+				
+			</li>
+			<li class ="col s12 waves-effect waves-light" routerLink='home' routerLinkActive="active"><a>Home</a></li>
+			<li class ="col s12 waves-effect waves-light" routerLink="profile" routerLinkActive="active"><a>Profile</a></li>
+			<li class ="col s12 waves-effect waves-light" routerLink="attendance" routerLinkActive="active"><a>Attendance</a></li>
+			<li class ="col s12 waves-effect waves-light" routerLink="courses" routerLinkActive="active"><a>Courses</a></li>
+			<li class ="col s12 waves-effect waves-light" routerLink="timetable" routerLinkActive="active"><a>TimeTable</a></li>
+			<li class ="col s12 waves-effect waves-light"  routerLink="calendar" routerLinkActive="active"><a>Calendar</a></li>
+
+
+
+			
+
+			
+		</ul>
+		<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  	</div>
+
+    <div class="col s9">
+		<div class="right teal-text">
+			<br>
+			<div class="col s2">
+				
+				<i title="Notifications" data-beloworigin="true" class="material-icons dropdown-button waves-effect waves-light" data-activates="notification">assignment</i>
+				<ul id='notification' class='dropdown-content teal-text'>
+					<li class="teal-text">Notification1</li>
+					<li class="divider"></li>
+
+					<li class="teal-text">Notification2</li>
+					
+				</ul>
+			
+			
+			</div>
+
+
+
+			<div class="col s2 offset-s1">
+				
+				<i title="Messages" data-beloworigin="true" class="material-icons dropdown-button waves-effect waves-light" data-activates="messages">messages</i>
+				<ul id='messages' class='dropdown-content teal-text'>
+					<li class="teal-text">Message1</li>
+					
+					<li class="divider"></li>
+					<li class="teal-text">Message2</li>
+				</ul>
+			
+			
+			</div>
+
+			<div class="col s2 offset-s1">
+				
+				<i title="Settings" data-beloworigin="true" class="material-icons dropdown-button waves-effect waves-light" data-activates="settings">settings</i>
+				<ul id='settings' class='dropdown-content teal-text'>
+					<li class="teal-text">Account</li>
+					
+					<li class="divider"></li>
+					<li class="teal-text">Privacy</li>
+					<li class="divider"></li>
+					<li class="teal-text" routerLink="" routerLinkActive="active">LogOut</li>
+				</ul>
+			
+			
+			</div>
+		
+		</div>
+		<router-outlet>
+		</router-outlet>
+
+		
+    </div>
+
+</div>
+
+
