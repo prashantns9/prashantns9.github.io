@@ -332,11 +332,18 @@ p.lead {
 	color:#fff;
 	border:2px solid #333;
 }
+
+
 .bgcover {
 	background-size:cover;
 	background-repeat:no-repeat;
 	position:relative;
 }
+.mypanel {
+	border:2px solid #333;
+	background-color:transparent;
+}
+
 img {
 	max-width:100%;
 }
