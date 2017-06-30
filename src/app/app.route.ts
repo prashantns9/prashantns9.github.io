@@ -5,10 +5,12 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { StudentDashboard } from './studentdashboard/student-dashboard.component'
 import {DashboardHomeComponent} from './studentdashboard/dashboard-home/dashboard-home.component';
 import { ProfileComponent } from './studentdashboard/profile/profile.component';
-import { AttendanceComponent } from './studentdashboard/attendance/attendance.component';
-import { CoursesComponent } from './studentdashboard/courses/courses.component';
-import { TimeTableComponent } from './studentdashboard/time-table/time-table.component';
-import { CalendarComponent } from './studentdashboard/calendar/calendar.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { CoursesComponent } from './courses/courses.component';
+import { TimeTableComponent } from './time-table/time-table.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { TeacherDashboardComponent } from './teacher-dashboard/teacher-dashboard.component';
+import { TeacherProfileComponent } from './teacher-dashboard/teacher-profile/teacher-profile.component';
 
 const routes: Routes = [
     {path:"", component: LoginComponent},
@@ -23,6 +25,17 @@ const routes: Routes = [
             { path: 'courses', component: CoursesComponent },
             { path: 'timetable', component: TimeTableComponent },
             { path: 'calendar', component: CalendarComponent }
+
+        ]
+
+    },
+
+
+    {path:"student-dashboard", component: TeacherDashboardComponent,
+    
+        children: [
+           
+            { path: 'profile', component: TeacherProfileComponent },
 
         ]
 

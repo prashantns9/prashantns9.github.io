@@ -9,11 +9,13 @@ import { ProfileComponent } from './studentdashboard/profile/profile.component';
 import { routingComponents } from './app.route';
 import { DashboardHomeComponent } from './studentdashboard/dashboard-home/dashboard-home.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { CoursesComponent } from './studentdashboard/courses/courses.component';
-import { PlacementComponent } from './studentdashboard/placement/placement.component';
-import { AttendanceComponent } from './studentdashboard/attendance/attendance.component';
-import { TimeTableComponent } from './studentdashboard/time-table/time-table.component';
-import { CalendarComponent } from './studentdashboard/calendar/calendar.component';
+import { CoursesComponent } from './courses/courses.component';
+import { PlacementComponent } from './placement/placement.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { TimeTableComponent } from './time-table/time-table.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { TeacherDashboardComponent } from './teacher-dashboard/teacher-dashboard.component';
+import { TeacherProfileComponent } from './teacher-dashboard/teacher-profile/teacher-profile.component';
 @NgModule({
 
   imports: [
@@ -22,7 +24,7 @@ import { CalendarComponent } from './studentdashboard/calendar/calendar.componen
   ],
 
   declarations: [
-    AppComponent, routingComponents, ProfileComponent, DashboardHomeComponent, SignUpComponent, CoursesComponent, PlacementComponent, AttendanceComponent, TimeTableComponent, CalendarComponent
+    AppComponent, routingComponents, ProfileComponent, DashboardHomeComponent, SignUpComponent, CoursesComponent, PlacementComponent, AttendanceComponent, TimeTableComponent, CalendarComponent, TeacherDashboardComponent, TeacherProfileComponent
   ],
 
 
