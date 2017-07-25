@@ -24,6 +24,13 @@ p {
 	line-height:1.5;
 }
 
+hr{
+	border: none;
+    height: 1px;
+    color: #000; /* old IE */
+    background-color: #000; /* Modern Browsers */
+}
+
 
 @media(min-width:768px) {
 	p {
