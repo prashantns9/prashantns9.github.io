@@ -163,6 +163,9 @@ a:hover,a:focus {
 			font-weight:300;
 			letter-spacing:3px;
 	}
+	.car{
+		height: 400px;
+	}
 }
 .btn-circle {
 	width:auto;
@@ -281,6 +284,9 @@ ul.banner-social-buttons {
 	.col-xs-12{
 		padding: 30px;
 		
+	}
+	.car{
+		height: 600px;
 	}
 }
 footer {
