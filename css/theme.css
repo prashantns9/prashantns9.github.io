@@ -36,7 +36,11 @@ hr {
     background-color:#fff; /* Modern Browsers */
 }
 
-
+.logo{
+	height: 60px;
+	width: 60px;
+	padding: 6px;
+}
 @media(min-width:768px) {
 	p {
 		margin:0 0 35px;
@@ -292,6 +296,10 @@ ul.banner-social-buttons {
 	}
 	.car{
 		height: 700px;
+	}
+	.logo{
+
+		padding: 13px;
 	}
 }
 footer {
