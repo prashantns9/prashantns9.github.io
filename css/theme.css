@@ -176,8 +176,13 @@ a:hover,a:focus {
 		height: 400px;
 	}
 	.serviceline{
-	
+		margin-top:25px;
 	}
+	.leaveSpaceOnLarge{
+
+		margin-top:25px;
+	}
+
 }
 .btn-circle {
 	
@@ -302,6 +307,9 @@ ul.banner-social-buttons {
 	.logo{
 
 		padding: 13px;
+	}
+	.serviceline{
+		text-align:justify;
 	}
 }
 footer {
