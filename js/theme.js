@@ -3,7 +3,7 @@
 
 
 $('.carousel').carousel({
-interval: 10000,
+interval: 13000,
 pause: "hover"
 })
 $(window).scroll(function() {
