@@ -120,8 +120,8 @@ a:hover,a:focus {
 		-moz-transition:background .5s ease-in-out,padding .5s ease-in-out;
 		transition:background .5s ease-in-out,padding .5s ease-in-out;
 	}
-		 .navbar-custom.top-nav-collapse {
-		 padding:0;
+	.navbar-custom.top-nav-collapse {
+		padding:0;
 		border-bottom:1px solid rgba(255,255,255,.3);
 		color:#333;
 			background:#fff;
@@ -177,6 +177,12 @@ a:hover,a:focus {
 	}
 	.serviceline{
 		margin-top:25px;
+	}
+	.servicehead{
+		background-color: white;
+		color: black;
+		border-radius: 11%;
+		font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	}
 	.leaveSpaceOnLarge{
 
@@ -310,6 +316,14 @@ ul.banner-social-buttons {
 	}
 	.serviceline{
 		text-align:justify;
+	}
+	.servicehead{
+		background-color: white;
+		color: black;
+		border-radius: 15%;
+		font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		
+
 	}
 }
 footer {
