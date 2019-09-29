@@ -15,6 +15,11 @@
 .section{
     padding-top: 3rem;
 }
+.disabled-link{
+    cursor: not-allowed;
+    pointer-events: none;
+    color: #cccccc;
+}
 footer{
     position: fixed;
     bottom: 0;
