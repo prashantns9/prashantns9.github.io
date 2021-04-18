@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Prashant Shinde",
+        "age": 26,
+        "subject": "Web Development"
+    },
+    
+    {
+        "name": "Rajkumar Patil",
+        "age": 27,
+        "subject": "Machine Learning"
+    },
+        
+    {
+        "name": "Prasad Tanpure",
+        "age": 16,
+        "subject": "Marathi"
+    }
+]
