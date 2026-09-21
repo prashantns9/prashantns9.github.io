@@ -13,15 +13,15 @@
 <meta property="og:url" content="https://www.prashantshinde.in/" />
 <meta property="og:title" content="Prashant Shinde — AI-native full-stack engineer" />
 <meta property="og:description" content="7+ years across Atlassian, PayPal and Barclays. Building fast, AI-powered product experiences end to end." />
-<meta property="og:image" content="https://www.prashantshinde.in/assets/images/about/vectorphoto.png" />
+<meta property="og:image" content="https://www.prashantshinde.in/assets/images/about/about-dark.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Prashant Shinde — AI-native full-stack engineer" />
 <meta name="twitter:description" content="7+ years across Atlassian, PayPal and Barclays. Building fast, AI-powered product experiences end to end." />
-<meta name="twitter:image" content="https://www.prashantshinde.in/assets/images/about/vectorphoto.png" />
+<meta name="twitter:image" content="https://www.prashantshinde.in/assets/images/about/about-dark.png" />
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="icon" href="favicon.png" sizes="48x48" />
-<link rel="apple-touch-icon" href="assets/images/about/vectorphoto.png" />
+<link rel="apple-touch-icon" href="assets/images/about/about-dark.png" />
 
 <script type="application/ld+json">
 {
@@ -342,9 +342,9 @@
     </div>
     <div class="portrait-wrap">
       <picture>
-        <source srcset="assets/images/about/vectorphoto.avif" type="image/avif" />
-        <source srcset="assets/images/about/vectorphoto.webp" type="image/webp" />
-        <img class="portrait" src="assets/images/about/vectorphoto.png" alt="Illustrated portrait of Prashant Shinde" width="300" height="300" fetchpriority="high" decoding="async" />
+        <source class="pf-avif" srcset="assets/images/about/about-dark.avif" type="image/avif" />
+        <source class="pf-webp" srcset="assets/images/about/about-dark.webp" type="image/webp" />
+        <img class="portrait" src="assets/images/about/about-dark.png" alt="Illustrated portrait of Prashant Shinde" width="300" height="300" fetchpriority="high" decoding="async" />
       </picture>
     </div>
   </div>
@@ -592,10 +592,23 @@
   function currentTheme() {
     return root.getAttribute('data-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   }
+  // Swap the hero portrait to match the active theme
+  var portraitImg = document.querySelector('.portrait');
+  var srcAvif = document.querySelector('.pf-avif');
+  var srcWebp = document.querySelector('.pf-webp');
+  function setPortrait(theme) {
+    var base = 'assets/images/about/about-' + (theme === 'light' ? 'light' : 'dark');
+    if (srcAvif) srcAvif.srcset = base + '.avif';
+    if (srcWebp) srcWebp.srcset = base + '.webp';
+    if (portraitImg) portraitImg.src = base + '.png';
+  }
+  if (currentTheme() === 'light') setPortrait('light');
+
   btn.addEventListener('click', function () {
     var next = currentTheme() === 'light' ? 'dark' : 'light';
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
+    setPortrait(next);
   });
 
   // Reveal on scroll
