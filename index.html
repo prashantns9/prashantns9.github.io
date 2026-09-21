@@ -224,7 +224,8 @@
   @media (max-width: 860px) {
     .hero-grid { grid-template-columns: 1fr; gap: 34px; }
     .portrait-wrap { order: -1; }
-    .bento { grid-template-columns: repeat(2, 1fr); }
+    .bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: auto; }
+    .cell { min-height: 150px; }
     .c-feature { grid-column: span 2; grid-row: span 1; }
   }
   @media (max-width: 520px) {
